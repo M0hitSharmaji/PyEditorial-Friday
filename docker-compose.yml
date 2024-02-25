@@ -1,0 +1,10 @@
+version: "3.6"
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: ./manage.py runserver 0.0.0.0:8001
+    ports:
+      - "8001:8001"
