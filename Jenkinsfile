@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label 'DevAgent' // Label for your Docker cloud agent
+        label 'Development' // Label for your Docker cloud agent
     }
     stages {
         stage("build") {
